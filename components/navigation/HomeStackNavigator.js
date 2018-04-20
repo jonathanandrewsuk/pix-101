@@ -1,5 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { StackNavigator } from 'react-navigation';
+import * as allActions from '../../redux/actions';
 import { HomeScreen, DetailsScreen } from '../screens';
 import { InfoModal } from '../modals';
 
@@ -42,8 +45,17 @@ const RootStack = StackNavigator(
   },
 );
 
-export default class HomeStackNavigator extends React.Component {
+export class HomeStackNavigator extends React.Component {
   render() {
-    return <RootStack />;
+    return <RootStack screenProps={this.props} />;
   }
 }
+
+const mapStateToProps = state => ({
+  hello: state.hello,
+});
+const mapDispatchToProps = dispatch => ({
+  allActions: bindActionCreators(allActions, dispatch),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeStackNavigator);
