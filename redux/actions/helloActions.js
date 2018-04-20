@@ -1,6 +1,6 @@
-export const helloWorld = () => {
+export const changeGreeting = () => {
     console.log('YOOO');
   return {
-    type: 'HELLO'
+    type: 'HELLO_CHANGE_GREETING'
   };
 };

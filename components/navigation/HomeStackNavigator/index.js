@@ -2,9 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { StackNavigator } from 'react-navigation';
-import * as allActions from '../../redux/actions';
-import { HomeScreen, DetailsScreen } from '../screens';
-import { InfoModal } from '../modals';
+
+import * as allActions from '../../../redux/actions';
+import { HomeScreen, DetailsScreen } from '../../screens';
+import { InfoModal } from '../../modals';
+
+import styles from './styles';
 
 const MainStack = StackNavigator(
   {
@@ -18,9 +21,7 @@ const MainStack = StackNavigator(
   {
     initialRouteName: 'Home',
     navigationOptions: {
-      headerStyle: {
-        backgroundColor: '#e43a30',
-      },
+      headerStyle: styles.headerStyle,
       headerTintColor: '#fff',
       headerTitleStyle: {
         fontWeight: 'bold',

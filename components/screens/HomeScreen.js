@@ -19,6 +19,9 @@ export default class HomeScreen extends React.Component {
   };
 
   render() {
+
+    const { screenProps } = this.props;
+
     return (
       <SafeAreaView style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <StatusBar barStyle="light-content"/>
@@ -31,7 +34,7 @@ export default class HomeScreen extends React.Component {
                     this.props.navigation.navigate('Details', {
                       itemId: 86,
                       otherParam: 'anything you want here',
-                      title: 'Great Thing'
+                      title: screenProps.hello.greeting
                     });
                   }}
                 />
