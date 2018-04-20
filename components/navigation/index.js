@@ -1,3 +1,3 @@
-import HomeStackNavigator from './HomeStackNavigator.js';
+import HomeStackNavigator from './HomeStackNavigator';
 
 export { HomeStackNavigator };

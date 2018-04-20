@@ -1,5 +1,4 @@
 import React from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { HomeScreen, DetailsScreen } from '../screens';
 import { InfoModal } from '../modals';
@@ -24,7 +23,7 @@ const MainStack = StackNavigator(
         fontWeight: 'bold',
       },
     },
-    tintColor: 'red'
+    tintColor: 'red',
   },
 );
 
@@ -40,7 +39,7 @@ const RootStack = StackNavigator(
   {
     mode: 'modal',
     headerMode: 'none',
-  }
+  },
 );
 
 export default class HomeStackNavigator extends React.Component {
