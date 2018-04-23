@@ -1,3 +1,3 @@
 import InfoModal from './InfoModal';
 
-export { InfoModal }
+export { InfoModal };

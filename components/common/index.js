@@ -1,3 +1,4 @@
 import LogoTitle from './LogoTitle';
+import ListItem from './ListItem';
 
-export { LogoTitle };
+export { LogoTitle, ListItem };

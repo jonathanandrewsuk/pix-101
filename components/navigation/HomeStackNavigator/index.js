@@ -54,6 +54,7 @@ export class HomeStackNavigator extends React.Component {
 
 const mapStateToProps = state => ({
   hello: state.hello,
+  images: state.images,
 });
 const mapDispatchToProps = dispatch => ({
   allActions: bindActionCreators(allActions, dispatch),

@@ -11,7 +11,8 @@
     "eslint-plugin-react": "^7.7.0",
     "jest-expo": "26.0.0",
     "react-native-scripts": "1.13.1",
-    "react-test-renderer": "16.3.0-alpha.1"
+    "react-test-renderer": "16.3.0-alpha.1",
+    "remote-redux-devtools": "^0.5.12"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -26,11 +27,15 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "expo": "^26.0.0",
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.1",
+    "react-native-infinite-scroll-view": "^0.4.3",
     "react-navigation": "^1.5.11",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "superagent": "^3.8.2"
   }
 }
