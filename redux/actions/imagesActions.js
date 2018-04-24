@@ -5,6 +5,13 @@ export const fetchImages = (data) => {
   };
 };
 
+export const clearThenFetchImages = (data) => {
+  return {
+    type: '$CLEAR_THEN_FETCH_IMAGES',
+    data,
+  };
+};
+
 export const REPLACE_IMAGES = 'REPLACE_IMAGES';
 
 export const replaceImages = (data) => {
@@ -30,5 +37,13 @@ export const selectItem = (data) => {
   return {
     type: 'SELECT_ITEM',
     data,
+  };
+};
+
+export const RESET_STORE = 'RESET_STORE';
+
+export const resetStore = () => {
+  return {
+    type: 'RESET_STORE',
   };
 };

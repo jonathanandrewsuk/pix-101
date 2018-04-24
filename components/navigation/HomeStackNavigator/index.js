@@ -2,11 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { StackNavigator } from 'react-navigation';
-
 import * as allActions from '../../../redux/actions';
 import { HomeScreen, DetailsScreen } from '../../screens';
 import { InfoModal } from '../../modals';
-
 import styles from './styles';
 
 const MainStack = StackNavigator(
@@ -53,7 +51,6 @@ export class HomeStackNavigator extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  hello: state.hello,
   images: state.images,
 });
 const mapDispatchToProps = dispatch => ({

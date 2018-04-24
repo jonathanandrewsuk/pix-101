@@ -1,4 +1,4 @@
-import HomeScreen from './HomeScreen.js';
+import HomeScreen from './HomeScreen';
 import DetailsScreen from './DetailsScreen';
 
 export { HomeScreen, DetailsScreen };

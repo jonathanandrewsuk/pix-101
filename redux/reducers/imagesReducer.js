@@ -3,7 +3,7 @@ import { ListView } from 'react-native';
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1.id !== r2.id });
 
 const defaultState = {
-  searchFor: 'dogs',
+  searchFor: '',
   dataSource: ds.cloneWithRows([]),
   selectedItem: {},
   home: true,
@@ -33,6 +33,16 @@ const reducer = (state = defaultState, action) => {
       return {
         ...state,
         selectedItem: action.data,
+      };
+    case 'RESET_STORE':
+      return {
+        ...state,
+        dataSource: ds.cloneWithRows([]),
+        selectedItem: {},
+        home: true,
+        canLoadMoreContent: true,
+        page: 1,
+        perPage: 10,
       };
     default:
       return state;

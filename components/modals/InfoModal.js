@@ -3,7 +3,6 @@ import { View, Text, Button, SafeAreaView, StatusBar } from 'react-native';
 
 export default class InfoModal extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <StatusBar barStyle="dark-content" />
