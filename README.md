@@ -1,6 +1,6 @@
 # pix-101
 Search for your favourite images on Pixabay, tap them to find out a little more!
-![pix 101](https://i.imgur.com/brYuGkm.png)
+![pix 101](https://i.imgur.com/aujQzqg.png)
 ### [Click here for video demo](https://www.youtube.com/watch?v=f9ukf9Ghk1U&feature=youtu.be)
 ![pix 101](https://media.giphy.com/media/woCKX5RY2WNXdvQvUZ/giphy.gif)
 ## Installation
